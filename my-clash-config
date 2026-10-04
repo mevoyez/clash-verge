@@ -1,633 +1,5 @@
 proxies:
-  - name: "🇯🇵日本高速01|CTCU|0.5x · liangxin"
-    type: vless
-    server: "cfyes.7770006.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "jp1-lx.7770006.xyz"
-    client-fingerprint: "safari"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/data/jp"
-      headers:
-        Host: "jp1-lx.7770006.xyz"
-  - name: "🇯🇵日本高速02|CTCU|0.5x · liangxin"
-    type: vless
-    server: "cfyes.7770006.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "jp2-lx.7770006.xyz"
-    client-fingerprint: "safari"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/data"
-      headers:
-        Host: "jp2-lx.7770006.xyz"
-  - name: "🇭🇰香港高速01|BGP|CMCU · liangxin"
-    type: vless
-    server: "aws-link1.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "iosapps.itunes.apple.com"
-    fingerprint: "d5c39647e414c144b719bc49cb41c4b8f46f09f4cf26c863cae15c01d4a7b96a"
-    flow: "xtls-rprx-vision"
-    client-fingerprint: "safari"
-  - name: "🇭🇰香港高速02|BGP|CMCU · liangxin"
-    type: vless
-    server: "aws-link2.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.lamer.com.hk"
-    fingerprint: "af0f11574724e7ddd96f64eb77a450f71ce2de61ee5afd6f2e27ed7604a6a9b1"
-    flow: "xtls-rprx-vision"
-    client-fingerprint: "safari"
-  - name: "🇭🇰香港高速03|BGP|CMCU · liangxin"
-    type: vless
-    server: "aws-link3.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "www.lamer.com.hk"
-    reality-opts:
-      public-key: "ux5T2jsYXnAMuf4eILTucbcX1xd1OwocOEkYetmUyAs"
-      short-id: "3206e665"
-    client-fingerprint: "ios"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰香港高速04|BGP|CMCU · liangxin"
-    type: vless
-    server: "aws-link4.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "www.lamer.com.hk"
-    reality-opts:
-      public-key: "wlh6mFICApoUIVqqQRBbS7o5X3sveqUJCRc54bH0XSg"
-      short-id: "a31b59fe"
-    client-fingerprint: "ios"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰香港高速05|BGP|CMCU · liangxin"
-    type: vless
-    server: "aws-link5.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "fastcdn.hoyoverse.com"
-    reality-opts:
-      public-key: "HfZeg7YPEWJMQKBXctbNZBuBAk1CW98FoJ7AEyCEdQQ"
-      short-id: "a49232a7"
-    client-fingerprint: "ios"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇬新加坡高速01|BGP|CTCUCM · liangxin"
-    type: vless
-    server: "aws-link7.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "fastcdn.hoyoverse.com"
-    reality-opts:
-      public-key: "w7AGIp_u4slcX3JotLyiuaT05lawuzU3f1eL88RI53c"
-      short-id: "1d77a374"
-    client-fingerprint: "ios"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇬新加坡高速02|BGP|CTCUCM · liangxin"
-    type: vless
-    server: "aws-link8.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "iosapps.itunes.apple.com"
-    reality-opts:
-      public-key: "vDrdqD70aoQOIU5P5UU-h2h9wCu_tEOD4pGu8NOGvzA"
-      short-id: "55c73a28"
-    client-fingerprint: "ios"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇬新加坡高速03|BGP|CTCUCM · liangxin"
-    type: vless
-    server: "aws-link9.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "iosapps.itunes.apple.com"
-    reality-opts:
-      public-key: "ncsES25G1Nj31aY0kdaNrooqQOqqqaHLk8zbF2b4BGw"
-      short-id: "bef8fff6"
-    client-fingerprint: "ios"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇬新加坡高速04|BGP|CTCUCM · liangxin"
-    type: vless
-    server: "aws-link30.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "www.lamer.com.hk"
-    reality-opts:
-      public-key: "NQboj96aHW_domplSIfIBqJpAnNN8rZokNYa-W-NdAo"
-      short-id: "fa6fb544"
-    client-fingerprint: "safari"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇬新加坡高速05|BGP|CTCUCM · liangxin"
-    type: vless
-    server: "aws-link31.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "download-porter.hoyoverse.com"
-    reality-opts:
-      public-key: "wXayfckurSM2zWeis7OAL_QVGm9wBLr0WYp2zFtJFAE"
-      short-id: "c7487aeb"
-    client-fingerprint: "safari"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇬新加坡高速06|BGP|CTCU · liangxin"
-    type: vless
-    server: "cfyes.7770008.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "lx-sg1.7770006.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/sg1"
-      headers:
-        Host: "lx-sg1.7770006.xyz"
-  - name: "🇸🇬新加坡高速07|BGP|CTCU · liangxin"
-    type: vless
-    server: "cfyes.7770008.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "lx-sg1.7770006.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/sg1"
-      headers:
-        Host: "lx-sg1.7770006.xyz"
-  - name: "🇸🇬新加坡高速08|BGP|CTCU · liangxin"
-    type: vless
-    server: "cfyes.7770008.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "lx-sg1.7770006.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/sg1"
-      headers:
-        Host: "lx-sg1.7770006.xyz"
-  - name: "🇯🇵日本高速01|BGP|CUCM · liangxin"
-    type: vless
-    server: "aws-link13.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "download-porter.hoyoverse.com"
-    reality-opts:
-      public-key: "AYnt6YQxdEGfpWjo25H9ZvgPp_WxRbGWSkaptwTZJ3M"
-      short-id: "131baaed"
-    client-fingerprint: "safari"
-    flow: "xtls-rprx-vision"
-  - name: "🇯🇵日本高速02|BGP|CUCM · liangxin"
-    type: vless
-    server: "aws-link14.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "download-porter.hoyoverse.com"
-    reality-opts:
-      public-key: "-nx1roqVG90gja9-412UcxR7tqdtdKqxuSHsSh03wm4"
-      short-id: "93d482c0"
-    client-fingerprint: "ios"
-    flow: "xtls-rprx-vision"
-  - name: "🇯🇵日本高速03|BGP|CUCM · liangxin"
-    type: vless
-    server: "aws-link19.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "download-porter.hoyoverse.com"
-    reality-opts:
-      public-key: "p6pNXigacmPazS1t76m66ia0DcFgAxOshOiPgzVvNGs"
-      short-id: "44099498"
-    client-fingerprint: "safari"
-    flow: "xtls-rprx-vision"
-  - name: "🇯🇵日本高速04|BGP|CUCM · liangxin"
-    type: vless
-    server: "aws-link20.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "download-porter.hoyoverse.com"
-    reality-opts:
-      public-key: "QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o"
-      short-id: "6314e825"
-    client-fingerprint: "ios"
-    flow: "xtls-rprx-vision"
-  - name: "🇯🇵日本高速05|BGP|CUCM · liangxin"
-    type: vless
-    server: "aws-link23.lxyun.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "download-porter.hoyoverse.com"
-    reality-opts:
-      public-key: "dLmUAqcdy4Z7iucApd9zjOhkXTjl-xt_eHumShIYW0c"
-      short-id: "ba826a54"
-    client-fingerprint: "safari"
-    flow: "xtls-rprx-vision"
-  - name: "🇯🇵日本高速06|BGP|CTCU · liangxin"
-    type: vless
-    server: "cfyes.7770006.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "jp3-lx.7770006.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/dash/jp"
-      headers:
-        Host: "jp3-lx.7770006.xyz"
-  - name: "🇯🇵日本高速07|BGP|CTCU · liangxin"
-    type: vless
-    server: "cfyes.7770006.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "jp3-lx.7770006.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/dash/jp"
-      headers:
-        Host: "jp3-lx.7770006.xyz"
-  - name: "🇯🇵日本高速08|BGP|CTCU · liangxin"
-    type: vless
-    server: "cfyes.7770006.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "jp4-lx.7770006.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/download/jp"
-      headers:
-        Host: "jp4-lx.7770006.xyz"
-  - name: "🇯🇵日本高速09|BGP|CTCU · liangxin"
-    type: vless
-    server: "cfyes.7770006.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "jp4-lx.7770006.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/download/jp"
-      headers:
-        Host: "jp4-lx.7770006.xyz"
-  - name: "🇺🇸美国高速01|CTCU|0.1x · liangxin"
-    type: vless
-    server: "cfyes.777078.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "lx-us1.777096.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/us"
-      headers:
-        Host: "lx-us1.777096.xyz"
-  - name: "🇺🇸美国高速02|CTCU|0.1x · liangxin"
-    type: vless
-    server: "cfyes.777078.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "lx-us2.777096.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/us"
-      headers:
-        Host: "lx-us2.777096.xyz"
-  - name: "🇺🇸美国高速03|CTCU|0.1x · liangxin"
-    type: vless
-    server: "cfyes.777078.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "lx-us3.777096.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/us"
-      headers:
-        Host: "lx-us3.777096.xyz"
-  - name: "🇺🇸美国高速04|CTCU|0.1x · liangxin"
-    type: vless
-    server: "cfyes.777078.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "lx-us4.777096.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/us"
-      headers:
-        Host: "lx-us4.777096.xyz"
-  - name: "🇺🇸美国高速05|CTCU|0.1x · liangxin"
-    type: vless
-    server: "cfyes.777078.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "lx-us5.777096.xyz"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/us"
-      headers:
-        Host: "lx-us5.777096.xyz"
-  - name: "🇬🇧英国伦敦01|CTCU|0.1x · liangxin"
-    type: vless
-    server: "cfyes.777078.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "gb-lx.777096.xyz"
-    client-fingerprint: "ios"
-    network: "ws"
-    ws-opts:
-      path: "/liangxin/gb1"
-      headers:
-        Host: "gb-lx.777096.xyz"
-  - name: "🇬🇧英国伦敦02|CTCU|0.1x · liangxin"
-    type: vless
-    server: "62.164.143.252"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "download-porter.hoyoverse.com"
-    reality-opts:
-      public-key: "a9I2uA3NNZA6uBAe3Tui9vZ8CG5MrMaYOifWrAdc0zg"
-      short-id: "a8609be8"
-    client-fingerprint: "safari"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇸美国洛杉矶01|流媒体|0.01x · liangxin"
-    type: vless
-    server: "lxyus1.777078.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "iosapps.itunes.apple.com"
-    reality-opts:
-      public-key: "ulU6wfyain_FQnYt23NGunTAfBQNLhIBY49mvekiQB0"
-      short-id: "ca032f81"
-    client-fingerprint: "safari"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇸美国洛杉矶02|流媒体|0.01x · liangxin"
-    type: vless
-    server: "lxyus3.777078.xyz"
-    port: 443
-    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "iosapps.itunes.apple.com"
-    reality-opts:
-      public-key: "paFz5M87V_EcKgUk7C9MlHYCTkOMLTNVe-h-6mSHOAk"
-      short-id: "cffc91ca"
-    client-fingerprint: "safari"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇬新加坡专线01|BGP|流媒体 · liangxin"
-    type: hysteria2
-    server: "aws-linkhy9.lxyun.xyz"
-    port: 60000
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "iosapps.itunes.apple.com"
-    ports: "60000-65530"
-    fingerprint: "2b6c9b75b2ef903fbe66ee91d1801941dea0ddb5429505ae3bce65e2fb17ad45"
-  - name: "🇸🇬新加坡专线02|BGP|流媒体 · liangxin"
-    type: hysteria2
-    server: "aws-linkhy10.lxyun.xyz"
-    port: 60000
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "iosapps.itunes.apple.com"
-    ports: "60000-65530"
-    fingerprint: "2b6c9b75b2ef903fbe66ee91d1801941dea0ddb5429505ae3bce65e2fb17ad45"
-  - name: "🇸🇬新加坡专线03|BGP|流媒体 · liangxin"
-    type: hysteria2
-    server: "aws-linkhy11.lxyun.xyz"
-    port: 60000
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "iosapps.itunes.apple.com"
-    ports: "60000-65530"
-    fingerprint: "dd9dd03d942400ad4c1400879bda98f4fa097183aa9a91a1423cdd42a3e183d7"
-  - name: "🇸🇬新加坡专线04|BGP|流媒体 · liangxin"
-    type: hysteria2
-    server: "aws-linkhy12.lxyun.xyz"
-    port: 60000
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "iosapps.itunes.apple.com"
-    ports: "60000-65530"
-    fingerprint: "064255322ff7fa4fc225b44e72e5347fb9094fccc3bdd14ddb006118296b3fd3"
-  - name: "🇯🇵日本专线01|BGP|流媒体 · liangxin"
-    type: hysteria2
-    server: "aws-linkhy15.lxyun.xyz"
-    port: 60000
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "bilibili-jp.biliimg.com"
-    ports: "60000-65530"
-    fingerprint: "95b89cf256ca58006f8d2f090bc8a6ca89b385f424852e82b59f2af384b142d7"
-  - name: "🇯🇵日本专线02|BGP|流媒体 · liangxin"
-    type: hysteria2
-    server: "aws-linkhy16.lxyun.xyz"
-    port: 60000
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "bilibili-jp2.biliimg.com"
-    ports: "60000-65530"
-    fingerprint: "95b89cf256ca58006f8d2f090bc8a6ca89b385f424852e82b59f2af384b142d7"
-  - name: "🇯🇵日本专线03|BGP|流媒体 · liangxin"
-    type: hysteria2
-    server: "aws-linkhy17.lxyun.xyz"
-    port: 60000
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "bilibili-jp3.biliimg.com"
-    ports: "60000-65530"
-    fingerprint: "a52eee8669d92360a913a3fc101157e2bdc182947a377831abbccc31928decce"
-  - name: "🇯🇵日本专线04|BGP|流媒体 · liangxin"
-    type: hysteria2
-    server: "aws-linkhy18.lxyun.xyz"
-    port: 60000
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "bilibili-jp4.biliimg.com"
-    ports: "60000-65530"
-    fingerprint: "a52eee8669d92360a913a3fc101157e2bdc182947a377831abbccc31928decce"
-  - name: "🇨🇳台湾专线01|BGP|流媒体 · liangxin"
-    type: hysteria2
-    server: "aws-linkhy22.lxyun.xyz"
-    port: 443
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "bilibili-tw.biliimg.com"
-    fingerprint: "41bdd7599812d70f35e0fdafef794eb25b4f16d8735876038e414f9b8a29bf4c"
-  - name: "🇬🇧英国伦敦01|流媒体|0.1x · liangxin"
-    type: hysteria2
-    server: "62.164.143.251"
-    port: 60000
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "bilibili-gb.biliimg.com"
-    ports: "60000-65530"
-    fingerprint: "f7d837d9a8fd47ae4f18de5a72430fb02f7e4c6e37a8823db929a1e1b8792aa1"
-  - name: "🇬🇧英国伦敦02|流媒体|0.1x · liangxin"
-    type: hysteria2
-    server: "62.164.143.251"
-    port: 60000
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "bilibili-gb.biliimg.com"
-    ports: "60000-65530"
-    fingerprint: "f7d837d9a8fd47ae4f18de5a72430fb02f7e4c6e37a8823db929a1e1b8792aa1"
-  - name: "🇺🇸美国01|流媒体|0.1x · liangxin"
-    type: hysteria2
-    server: "lxyus1.777078.xyz"
-    port: 443
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "iosapps.itunes.apple.com"
-    fingerprint: "4b10f090c73e5d841d56f81373b56168fd446a96adf85427738c6ef6c414b01b"
-  - name: "🇺🇸美国02|流媒体|0.1x · liangxin"
-    type: hysteria2
-    server: "lxyus2.777078.xyz"
-    port: 443
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "iosapps.itunes.apple.com"
-    fingerprint: "58f2df9e444565f71bcdf624069d51ded4d699b648d59f1bf197e9aac859b9bc"
-  - name: "🇺🇸美国03|流媒体|0.1x · liangxin"
-    type: hysteria2
-    server: "lxyus3.777078.xyz"
-    port: 443
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "iosapps.itunes.apple.com"
-    fingerprint: "ee961590f9558c24cef02e44d1f54e9cd21fc929ae627f2e18fe5b3d67ca5561"
-  - name: "🇺🇸美国04|流媒体|0.1x · liangxin"
-    type: hysteria2
-    server: "lxyus4.777078.xyz"
-    port: 443
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "iosapps.itunes.apple.com"
-    fingerprint: "4df742862fb9f529f841048ff99a914ae2ce83cbfa13ccf15618f72bc32f2650"
-  - name: "🇺🇸美国05|流媒体|0.1x · liangxin"
-    type: hysteria2
-    server: "203.10.97.121"
-    port: 60000
-    password: "15f581dd-5a73-4046-868c-5c45da145f99"
-    skip-cert-verify: false
-    udp: true
-    sni: "www.apple.com"
-    ports: "60000-65530"
-    fingerprint: "7883472b634b93a7ec09a020fdbd4b1ac7b0accc7569028dfaeb54c6384677c1"
-  - name: "请重新复制导入 · api6"
+  - name: "请重新复制导入 · NB"
     type: vless
     server: "185.229.222.21"
     port: 443
@@ -641,7 +13,7 @@ proxies:
       short-id: "c144680bc4d809"
     client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
-  - name: "🇸🇬AWS新加坡02|电信优化 · api6"
+  - name: "🇸🇬AWS新加坡02|电信优化 · NB"
     type: anytls
     server: "asg2.jueduibupao.top"
     port: 7000
@@ -649,7 +21,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     sni: "www.microsoft.com"
-  - name: "🇸🇬AWS新加坡03|电信优化|流媒体解锁 · api6"
+  - name: "🇸🇬AWS新加坡03|电信优化|流媒体解锁 · NB"
     type: anytls
     server: "asg3.jueduibupao.top"
     port: 7000
@@ -657,7 +29,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     sni: "www.microsoft.com"
-  - name: "🇯🇵AWS日本02|流媒体解锁 · api6"
+  - name: "🇯🇵AWS日本02|流媒体解锁 · NB"
     type: anytls
     server: "ajp2.jueduibupao.top"
     port: 7000
@@ -665,7 +37,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "ajp2.jueduibupao.top"
-  - name: "🇭🇰香港HKT02|hy2 · api6"
+  - name: "🇭🇰香港HKT02|hy2 · NB"
     type: hysteria2
     server: "ff.xxxyun.top"
     port: 22001
@@ -673,7 +45,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlhk1.jueduibupao.top"
-  - name: "🇭🇰香港HKT03 · api6"
+  - name: "🇭🇰香港HKT03 · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55001
@@ -681,7 +53,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlhk1.jueduibupao.top"
-  - name: "🇭🇰香港HKT05|v6入口 · api6"
+  - name: "🇭🇰香港HKT05|v6入口 · NB"
     type: anytls
     server: "shouzhuzhu.niubifast.cc"
     port: 45001
@@ -689,7 +61,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlhk1.jueduibupao.top"
-  - name: "🇭🇰香港HKT08|hy2 · api6"
+  - name: "🇭🇰香港HKT08|hy2 · NB"
     type: hysteria2
     server: "ff.xxxyun.top"
     port: 22002
@@ -697,7 +69,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlhk2.jueduibupao.top"
-  - name: "🇭🇰香港HKT09 · api6"
+  - name: "🇭🇰香港HKT09 · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55102
@@ -705,7 +77,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlhk2.jueduibupao.top"
-  - name: "🇭🇰香港HKT11|v6入口 · api6"
+  - name: "🇭🇰香港HKT11|v6入口 · NB"
     type: anytls
     server: "shouzhuzhu.niubifast.cc"
     port: 45102
@@ -713,7 +85,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlhk2.jueduibupao.top"
-  - name: "🇸🇬新加坡02|hy2|流媒体解锁|AI · api6"
+  - name: "🇸🇬新加坡02|hy2|流媒体解锁|AI · NB"
     type: hysteria2
     server: "ff.xxxyun.top"
     port: 22003
@@ -721,7 +93,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlsg1.jueduibupao.top"
-  - name: "🇸🇬新加坡03|流媒体解锁|AI · api6"
+  - name: "🇸🇬新加坡03|流媒体解锁|AI · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55003
@@ -729,7 +101,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlsg1.jueduibupao.top"
-  - name: "🇸🇬新加坡05|流媒体解锁|AI|v6入口 · api6"
+  - name: "🇸🇬新加坡05|流媒体解锁|AI|v6入口 · NB"
     type: anytls
     server: "shouzhuzhu.niubifast.cc"
     port: 45003
@@ -737,7 +109,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlsg1.jueduibupao.top"
-  - name: "🇯🇵日本02|hy2|流媒体解锁|AI · api6"
+  - name: "🇯🇵日本02|hy2|流媒体解锁|AI · NB"
     type: hysteria2
     server: "ff.xxxyun.top"
     port: 22004
@@ -745,7 +117,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atljp1.jueduibupao.top"
-  - name: "🇯🇵日本03|流媒体解锁|AI · api6"
+  - name: "🇯🇵日本03|流媒体解锁|AI · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55004
@@ -753,7 +125,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atljp1.jueduibupao.top"
-  - name: "🇰🇷韩国01|家宽 · api6"
+  - name: "🇰🇷韩国01|家宽 · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55014
@@ -761,7 +133,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlkr1.jueduibupao.top"
-  - name: "🇨🇳台湾01|Google play|AI|移动优化 · api6"
+  - name: "🇨🇳台湾01|Google play|AI|移动优化 · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55005
@@ -769,7 +141,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "tw2.jueduibupao.top"
-  - name: "🇨🇳台湾03|Google play|AI|移动优化 · api6"
+  - name: "🇨🇳台湾03|Google play|AI|移动优化 · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55006
@@ -777,7 +149,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "tw3.jueduibupao.top"
-  - name: "🇺🇸亚特兰大01|流媒体解锁|AI|移动优化 · api6"
+  - name: "🇺🇸亚特兰大01|流媒体解锁|AI|移动优化 · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55007
@@ -785,7 +157,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlus1.jueduibupao.top"
-  - name: "🇺🇸凤凰城03|流媒体解锁|AI|移动优化 · api6"
+  - name: "🇺🇸凤凰城03|流媒体解锁|AI|移动优化 · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55008
@@ -793,7 +165,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlus2.jueduibupao.top"
-  - name: "🇨🇦加拿大01|流媒体解锁|AI|移动优化 · api6"
+  - name: "🇨🇦加拿大01|流媒体解锁|AI|移动优化 · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55011
@@ -801,7 +173,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlca1.jueduibupao.top"
-  - name: "🇩🇪德国01|移动优化 · api6"
+  - name: "🇩🇪德国01|移动优化 · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55009
@@ -809,7 +181,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlde.jueduibupao.top"
-  - name: "🇬🇧英国01|流媒体解锁|AI|移动优化 · api6"
+  - name: "🇬🇧英国01|流媒体解锁|AI|移动优化 · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
     port: 55010
@@ -817,7 +189,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atluk.jueduibupao.top"
-  - name: "mugen11.6bnw.top · api6"
+  - name: "mugen11.6bnw.top · NB"
     type: vmess
     server: "mugen11.6bnw.top"
     port: 8080
@@ -832,7 +204,7 @@ proxies:
       path: "/?ed=2560"
       headers:
         Host: "mugen11.6bnw.top"
-  - name: "bestcf.top · api6"
+  - name: "bestcf.top · NB"
     type: vmess
     server: "bestcf.top"
     port: 8080
@@ -847,7 +219,7 @@ proxies:
       path: "/?ed=2560"
       headers:
         Host: "buyvmus2.6bnw.top"
-  - name: "mugen33.6bnw.top · api6"
+  - name: "mugen33.6bnw.top · NB"
     type: vmess
     server: "mugen33.6bnw.top"
     port: 8080
@@ -862,7 +234,7 @@ proxies:
       path: "/?ed=2560"
       headers:
         Host: "buyvmus2.6bnw.top"
-  - name: "mugen44.6bnw.top · api6"
+  - name: "mugen44.6bnw.top · NB"
     type: vmess
     server: "mugen44.6bnw.top"
     port: 8080
@@ -877,3 +249,631 @@ proxies:
       path: "/?ed=2560"
       headers:
         Host: "buyvmus2.6bnw.top"
+  - name: "🇯🇵日本高速01|CTCU|0.5x · LX"
+    type: vless
+    server: "cfyes.7770006.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "jp1-lx.7770006.xyz"
+    client-fingerprint: "safari"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/data/jp"
+      headers:
+        Host: "jp1-lx.7770006.xyz"
+  - name: "🇯🇵日本高速02|CTCU|0.5x · LX"
+    type: vless
+    server: "cfyes.7770006.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "jp2-lx.7770006.xyz"
+    client-fingerprint: "safari"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/data"
+      headers:
+        Host: "jp2-lx.7770006.xyz"
+  - name: "🇭🇰香港高速01|BGP|CMCU · LX"
+    type: vless
+    server: "aws-link1.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "iosapps.itunes.apple.com"
+    fingerprint: "d5c39647e414c144b719bc49cb41c4b8f46f09f4cf26c863cae15c01d4a7b96a"
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "safari"
+  - name: "🇭🇰香港高速02|BGP|CMCU · LX"
+    type: vless
+    server: "aws-link2.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.lamer.com.hk"
+    fingerprint: "af0f11574724e7ddd96f64eb77a450f71ce2de61ee5afd6f2e27ed7604a6a9b1"
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "safari"
+  - name: "🇭🇰香港高速03|BGP|CMCU · LX"
+    type: vless
+    server: "aws-link3.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "www.lamer.com.hk"
+    reality-opts:
+      public-key: "ux5T2jsYXnAMuf4eILTucbcX1xd1OwocOEkYetmUyAs"
+      short-id: "3206e665"
+    client-fingerprint: "ios"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰香港高速04|BGP|CMCU · LX"
+    type: vless
+    server: "aws-link4.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "www.lamer.com.hk"
+    reality-opts:
+      public-key: "wlh6mFICApoUIVqqQRBbS7o5X3sveqUJCRc54bH0XSg"
+      short-id: "a31b59fe"
+    client-fingerprint: "ios"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰香港高速05|BGP|CMCU · LX"
+    type: vless
+    server: "aws-link5.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "fastcdn.hoyoverse.com"
+    reality-opts:
+      public-key: "HfZeg7YPEWJMQKBXctbNZBuBAk1CW98FoJ7AEyCEdQQ"
+      short-id: "a49232a7"
+    client-fingerprint: "ios"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇬新加坡高速01|BGP|CTCUCM · LX"
+    type: vless
+    server: "aws-link7.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "fastcdn.hoyoverse.com"
+    reality-opts:
+      public-key: "w7AGIp_u4slcX3JotLyiuaT05lawuzU3f1eL88RI53c"
+      short-id: "1d77a374"
+    client-fingerprint: "ios"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇬新加坡高速02|BGP|CTCUCM · LX"
+    type: vless
+    server: "aws-link8.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "iosapps.itunes.apple.com"
+    reality-opts:
+      public-key: "vDrdqD70aoQOIU5P5UU-h2h9wCu_tEOD4pGu8NOGvzA"
+      short-id: "55c73a28"
+    client-fingerprint: "ios"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇬新加坡高速03|BGP|CTCUCM · LX"
+    type: vless
+    server: "aws-link9.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "iosapps.itunes.apple.com"
+    reality-opts:
+      public-key: "ncsES25G1Nj31aY0kdaNrooqQOqqqaHLk8zbF2b4BGw"
+      short-id: "bef8fff6"
+    client-fingerprint: "ios"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇬新加坡高速04|BGP|CTCUCM · LX"
+    type: vless
+    server: "aws-link30.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "www.lamer.com.hk"
+    reality-opts:
+      public-key: "NQboj96aHW_domplSIfIBqJpAnNN8rZokNYa-W-NdAo"
+      short-id: "fa6fb544"
+    client-fingerprint: "safari"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇬新加坡高速05|BGP|CTCUCM · LX"
+    type: vless
+    server: "aws-link31.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "download-porter.hoyoverse.com"
+    reality-opts:
+      public-key: "wXayfckurSM2zWeis7OAL_QVGm9wBLr0WYp2zFtJFAE"
+      short-id: "c7487aeb"
+    client-fingerprint: "safari"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇬新加坡高速06|BGP|CTCU · LX"
+    type: vless
+    server: "cfyes.7770008.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "lx-sg1.7770006.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/sg1"
+      headers:
+        Host: "lx-sg1.7770006.xyz"
+  - name: "🇸🇬新加坡高速07|BGP|CTCU · LX"
+    type: vless
+    server: "cfyes.7770008.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "lx-sg1.7770006.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/sg1"
+      headers:
+        Host: "lx-sg1.7770006.xyz"
+  - name: "🇸🇬新加坡高速08|BGP|CTCU · LX"
+    type: vless
+    server: "cfyes.7770008.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "lx-sg1.7770006.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/sg1"
+      headers:
+        Host: "lx-sg1.7770006.xyz"
+  - name: "🇯🇵日本高速01|BGP|CUCM · LX"
+    type: vless
+    server: "aws-link13.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "download-porter.hoyoverse.com"
+    reality-opts:
+      public-key: "AYnt6YQxdEGfpWjo25H9ZvgPp_WxRbGWSkaptwTZJ3M"
+      short-id: "131baaed"
+    client-fingerprint: "safari"
+    flow: "xtls-rprx-vision"
+  - name: "🇯🇵日本高速02|BGP|CUCM · LX"
+    type: vless
+    server: "aws-link14.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "download-porter.hoyoverse.com"
+    reality-opts:
+      public-key: "-nx1roqVG90gja9-412UcxR7tqdtdKqxuSHsSh03wm4"
+      short-id: "93d482c0"
+    client-fingerprint: "ios"
+    flow: "xtls-rprx-vision"
+  - name: "🇯🇵日本高速03|BGP|CUCM · LX"
+    type: vless
+    server: "aws-link19.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "download-porter.hoyoverse.com"
+    reality-opts:
+      public-key: "p6pNXigacmPazS1t76m66ia0DcFgAxOshOiPgzVvNGs"
+      short-id: "44099498"
+    client-fingerprint: "safari"
+    flow: "xtls-rprx-vision"
+  - name: "🇯🇵日本高速04|BGP|CUCM · LX"
+    type: vless
+    server: "aws-link20.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "download-porter.hoyoverse.com"
+    reality-opts:
+      public-key: "QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o"
+      short-id: "6314e825"
+    client-fingerprint: "ios"
+    flow: "xtls-rprx-vision"
+  - name: "🇯🇵日本高速05|BGP|CUCM · LX"
+    type: vless
+    server: "aws-link23.lxyun.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "download-porter.hoyoverse.com"
+    reality-opts:
+      public-key: "dLmUAqcdy4Z7iucApd9zjOhkXTjl-xt_eHumShIYW0c"
+      short-id: "ba826a54"
+    client-fingerprint: "safari"
+    flow: "xtls-rprx-vision"
+  - name: "🇯🇵日本高速06|BGP|CTCU · LX"
+    type: vless
+    server: "cfyes.7770006.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "jp3-lx.7770006.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/dash/jp"
+      headers:
+        Host: "jp3-lx.7770006.xyz"
+  - name: "🇯🇵日本高速07|BGP|CTCU · LX"
+    type: vless
+    server: "cfyes.7770006.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "jp3-lx.7770006.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/dash/jp"
+      headers:
+        Host: "jp3-lx.7770006.xyz"
+  - name: "🇯🇵日本高速08|BGP|CTCU · LX"
+    type: vless
+    server: "cfyes.7770006.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "jp4-lx.7770006.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/download/jp"
+      headers:
+        Host: "jp4-lx.7770006.xyz"
+  - name: "🇯🇵日本高速09|BGP|CTCU · LX"
+    type: vless
+    server: "cfyes.7770006.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "jp4-lx.7770006.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/download/jp"
+      headers:
+        Host: "jp4-lx.7770006.xyz"
+  - name: "🇺🇸美国高速01|CTCU|0.1x · LX"
+    type: vless
+    server: "cfyes.777078.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "lx-us1.777096.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/us"
+      headers:
+        Host: "lx-us1.777096.xyz"
+  - name: "🇺🇸美国高速02|CTCU|0.1x · LX"
+    type: vless
+    server: "cfyes.777078.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "lx-us2.777096.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/us"
+      headers:
+        Host: "lx-us2.777096.xyz"
+  - name: "🇺🇸美国高速03|CTCU|0.1x · LX"
+    type: vless
+    server: "cfyes.777078.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "lx-us3.777096.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/us"
+      headers:
+        Host: "lx-us3.777096.xyz"
+  - name: "🇺🇸美国高速04|CTCU|0.1x · LX"
+    type: vless
+    server: "cfyes.777078.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "lx-us4.777096.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/us"
+      headers:
+        Host: "lx-us4.777096.xyz"
+  - name: "🇺🇸美国高速05|CTCU|0.1x · LX"
+    type: vless
+    server: "cfyes.777078.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "lx-us5.777096.xyz"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/us"
+      headers:
+        Host: "lx-us5.777096.xyz"
+  - name: "🇬🇧英国伦敦01|CTCU|0.1x · LX"
+    type: vless
+    server: "cfyes.777078.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "gb-lx.777096.xyz"
+    client-fingerprint: "ios"
+    network: "ws"
+    ws-opts:
+      path: "/liangxin/gb1"
+      headers:
+        Host: "gb-lx.777096.xyz"
+  - name: "🇬🇧英国伦敦02|CTCU|0.1x · LX"
+    type: vless
+    server: "62.164.143.252"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "download-porter.hoyoverse.com"
+    reality-opts:
+      public-key: "a9I2uA3NNZA6uBAe3Tui9vZ8CG5MrMaYOifWrAdc0zg"
+      short-id: "a8609be8"
+    client-fingerprint: "safari"
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇸美国洛杉矶01|流媒体|0.01x · LX"
+    type: vless
+    server: "lxyus1.777078.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "iosapps.itunes.apple.com"
+    reality-opts:
+      public-key: "ulU6wfyain_FQnYt23NGunTAfBQNLhIBY49mvekiQB0"
+      short-id: "ca032f81"
+    client-fingerprint: "safari"
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇸美国洛杉矶02|流媒体|0.01x · LX"
+    type: vless
+    server: "lxyus3.777078.xyz"
+    port: 443
+    uuid: "15f581dd-5a73-4046-868c-5c45da145f99"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "iosapps.itunes.apple.com"
+    reality-opts:
+      public-key: "paFz5M87V_EcKgUk7C9MlHYCTkOMLTNVe-h-6mSHOAk"
+      short-id: "cffc91ca"
+    client-fingerprint: "safari"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇬新加坡专线01|BGP|流媒体 · LX"
+    type: hysteria2
+    server: "aws-linkhy9.lxyun.xyz"
+    port: 60000
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "iosapps.itunes.apple.com"
+    ports: "60000-65530"
+    fingerprint: "2b6c9b75b2ef903fbe66ee91d1801941dea0ddb5429505ae3bce65e2fb17ad45"
+  - name: "🇸🇬新加坡专线02|BGP|流媒体 · LX"
+    type: hysteria2
+    server: "aws-linkhy10.lxyun.xyz"
+    port: 60000
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "iosapps.itunes.apple.com"
+    ports: "60000-65530"
+    fingerprint: "2b6c9b75b2ef903fbe66ee91d1801941dea0ddb5429505ae3bce65e2fb17ad45"
+  - name: "🇸🇬新加坡专线03|BGP|流媒体 · LX"
+    type: hysteria2
+    server: "aws-linkhy11.lxyun.xyz"
+    port: 60000
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "iosapps.itunes.apple.com"
+    ports: "60000-65530"
+    fingerprint: "dd9dd03d942400ad4c1400879bda98f4fa097183aa9a91a1423cdd42a3e183d7"
+  - name: "🇸🇬新加坡专线04|BGP|流媒体 · LX"
+    type: hysteria2
+    server: "aws-linkhy12.lxyun.xyz"
+    port: 60000
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "iosapps.itunes.apple.com"
+    ports: "60000-65530"
+    fingerprint: "064255322ff7fa4fc225b44e72e5347fb9094fccc3bdd14ddb006118296b3fd3"
+  - name: "🇯🇵日本专线01|BGP|流媒体 · LX"
+    type: hysteria2
+    server: "aws-linkhy15.lxyun.xyz"
+    port: 60000
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "bilibili-jp.biliimg.com"
+    ports: "60000-65530"
+    fingerprint: "95b89cf256ca58006f8d2f090bc8a6ca89b385f424852e82b59f2af384b142d7"
+  - name: "🇯🇵日本专线02|BGP|流媒体 · LX"
+    type: hysteria2
+    server: "aws-linkhy16.lxyun.xyz"
+    port: 60000
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "bilibili-jp2.biliimg.com"
+    ports: "60000-65530"
+    fingerprint: "95b89cf256ca58006f8d2f090bc8a6ca89b385f424852e82b59f2af384b142d7"
+  - name: "🇯🇵日本专线03|BGP|流媒体 · LX"
+    type: hysteria2
+    server: "aws-linkhy17.lxyun.xyz"
+    port: 60000
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "bilibili-jp3.biliimg.com"
+    ports: "60000-65530"
+    fingerprint: "a52eee8669d92360a913a3fc101157e2bdc182947a377831abbccc31928decce"
+  - name: "🇯🇵日本专线04|BGP|流媒体 · LX"
+    type: hysteria2
+    server: "aws-linkhy18.lxyun.xyz"
+    port: 60000
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "bilibili-jp4.biliimg.com"
+    ports: "60000-65530"
+    fingerprint: "a52eee8669d92360a913a3fc101157e2bdc182947a377831abbccc31928decce"
+  - name: "🇨🇳台湾专线01|BGP|流媒体 · LX"
+    type: hysteria2
+    server: "aws-linkhy22.lxyun.xyz"
+    port: 443
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "bilibili-tw.biliimg.com"
+    fingerprint: "41bdd7599812d70f35e0fdafef794eb25b4f16d8735876038e414f9b8a29bf4c"
+  - name: "🇬🇧英国伦敦01|流媒体|0.1x · LX"
+    type: hysteria2
+    server: "62.164.143.251"
+    port: 60000
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "bilibili-gb.biliimg.com"
+    ports: "60000-65530"
+    fingerprint: "f7d837d9a8fd47ae4f18de5a72430fb02f7e4c6e37a8823db929a1e1b8792aa1"
+  - name: "🇬🇧英国伦敦02|流媒体|0.1x · LX"
+    type: hysteria2
+    server: "62.164.143.251"
+    port: 60000
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "bilibili-gb.biliimg.com"
+    ports: "60000-65530"
+    fingerprint: "f7d837d9a8fd47ae4f18de5a72430fb02f7e4c6e37a8823db929a1e1b8792aa1"
+  - name: "🇺🇸美国01|流媒体|0.1x · LX"
+    type: hysteria2
+    server: "lxyus1.777078.xyz"
+    port: 443
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "iosapps.itunes.apple.com"
+    fingerprint: "4b10f090c73e5d841d56f81373b56168fd446a96adf85427738c6ef6c414b01b"
+  - name: "🇺🇸美国02|流媒体|0.1x · LX"
+    type: hysteria2
+    server: "lxyus2.777078.xyz"
+    port: 443
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "iosapps.itunes.apple.com"
+    fingerprint: "58f2df9e444565f71bcdf624069d51ded4d699b648d59f1bf197e9aac859b9bc"
+  - name: "🇺🇸美国03|流媒体|0.1x · LX"
+    type: hysteria2
+    server: "lxyus3.777078.xyz"
+    port: 443
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "iosapps.itunes.apple.com"
+    fingerprint: "ee961590f9558c24cef02e44d1f54e9cd21fc929ae627f2e18fe5b3d67ca5561"
+  - name: "🇺🇸美国04|流媒体|0.1x · LX"
+    type: hysteria2
+    server: "lxyus4.777078.xyz"
+    port: 443
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "iosapps.itunes.apple.com"
+    fingerprint: "4df742862fb9f529f841048ff99a914ae2ce83cbfa13ccf15618f72bc32f2650"
+  - name: "🇺🇸美国05|流媒体|0.1x · LX"
+    type: hysteria2
+    server: "203.10.97.121"
+    port: 60000
+    password: "15f581dd-5a73-4046-868c-5c45da145f99"
+    skip-cert-verify: false
+    udp: true
+    sni: "www.apple.com"
+    ports: "60000-65530"
+    fingerprint: "7883472b634b93a7ec09a020fdbd4b1ac7b0accc7569028dfaeb54c6384677c1"
