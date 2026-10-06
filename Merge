@@ -1,40 +1,21 @@
 dns:
-  enable: true 
-  listen: "0.0.0.0:1053"
+  enable: true
   ipv6: false
   prefer-h3: false
   respect-rules: true
   use-system-hosts: false
-  cache-algorithm: "arc"
-  enhanced-mode: "fake-ip"
-  fake-ip-range: "198.18.0.1/16"
-  fake-ip-filter:
-    - "+.lan"
-    - "+.local"
-    - "+.msftconnecttest.com"
-    - "+.msftncsi.com"
-    - "localhost.ptlogin2.qq.com"
-    - "localhost.sec.qq.com"
-    - "+.in-addr.arpa"
-    - "+.ip6.arpa"
-    - "time.*.com"
-    - "time.*.gov"
-    - "pool.ntp.org"
-    - "localhost.work.weixin.qq.com"
-  default-nameserver: ["223.5.5.5", "1.2.4.8"]
-  nameserver: # foreignNameservers
-    - "https://208.67.222.222/dns-query"
-    - "https://77.88.8.8/dns-query"
-    - "https://1.1.1.1/dns-query"
-    - "https://8.8.4.4/dns-query"
-  proxy-server-nameserver: # domesticNameservers
-    - "https://223.5.5.5/dns-query"
-    - "https://doh.pub/dns-query"
-  nameserver-policy:
-    "geosite:private,cn":
-      - "https://223.5.5.5/dns-query"
-      - "https://doh.pub/dns-query"
+  cache-algorithm: arc
 
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+
+  default-nameserver:
+    - 223.5.5.5
+    - 1.2.4.8
+
+  proxy-server-nameserver:
+    - https://223.5.5.5/dns-query
+    - https://doh.pub/dns-query
 rule-providers:
   reject:
     type: http
@@ -158,22 +139,8 @@ rule-providers:
 
 # 代理组 (来自 tun.txt 中的 proxy-groups)
 proxy-groups:
-  # 自动测速并选择最优节点
-  - name: "自动选择"
-    type: "url-test"
-    include-all: true
-    exclude-type: "DIRECT|Reject"
-    interval: 180
-    tolerance: 50
-    timeout: 5000
-    url: "https://www.gstatic.com/generate_204"
-    expected-status: 204
-    lazy: false
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/speed.svg"
 
-  # 节点总选择
+  # ① 节点选择
   - name: "节点选择"
     type: "select"
     proxies:
@@ -188,7 +155,211 @@ proxy-groups:
     hidden: false
     icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"
 
-  # 自动故障转移
+  # ② Spotify
+  - name: "Spotify"
+    type: "select"
+    proxies:
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+      - "全局直连"
+    include-all: true
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/spotify.svg"
+
+  # ③ AI
+  - name: "AI"
+    type: "select"
+    proxies:
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+    include-all: true
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/chatgpt.svg"
+
+  # ④ TikTok
+  - name: "TikTok"
+    type: "select"
+    proxies:
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+      - "全局直连"
+    include-all: true
+    exclude-filter: "(?i)香港|HK|Hong Kong|HKG|🇭🇰"
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/tiktok.svg"
+
+  # ⑤ 漏网之鱼
+  - name: "漏网之鱼"
+    type: "select"
+    proxies:
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+      - "全局直连"
+    include-all: true
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg"
+
+  # ⑥ YouTube
+  - name: "YouTube"
+    type: "select"
+    proxies:
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+      - "全局直连"
+    include-all: true
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg"
+
+  # ⑦ 电报消息
+  - name: "电报消息"
+    type: "select"
+    proxies:
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+      - "全局直连"
+    include-all: true
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"
+
+  # ⑧ Netflix
+  - name: "Netflix"
+    type: "select"
+    proxies:
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+      - "全局直连"
+    include-all: true
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/netflix.svg"
+
+# ⑪ 微软服务
+  - name: "微软服务"
+    type: "select"
+    proxies:
+      - "全局直连"
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+    include-all: true
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"
+
+  # ⑨ 谷歌服务
+  - name: "谷歌服务"
+    type: "select"
+    proxies:
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+      - "全局直连"
+    include-all: true
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg"
+
+  # ⑩ 苹果服务
+  - name: "苹果服务"
+    type: "select"
+    proxies:
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+      - "全局直连"
+    include-all: true
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"
+
+  # ⑫ 全局直连
+  - name: "全局直连"
+    type: "select"
+    proxies:
+      - "DIRECT"
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+    include-all: true
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg"
+
+  # ⑬ 自动选择
+  # 后台运行，不在 Clash Verge UI 显示
+  - name: "自动选择"
+    type: "url-test"
+    include-all: true
+    exclude-type: "DIRECT|Reject"
+    interval: 180
+    tolerance: 50
+    timeout: 5000
+    url: "https://www.gstatic.com/generate_204"
+    expected-status: 204
+    lazy: false
+    max-failed-times: 3
+    hidden: true
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/speed.svg"
+
+  # ⑭ 故障转移
+  # 后台运行，不在 Clash Verge UI 显示
   - name: "故障转移"
     type: "fallback"
     include-all: true
@@ -199,90 +370,18 @@ proxy-groups:
     expected-status: 204
     lazy: false
     max-failed-times: 3
-    hidden: false
+    hidden: true
     icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/ambulance.svg"
-  - name: "谷歌服务"
-    type: "select"
-    proxies: ["节点选择", "延迟选优", "故障转移", "全局直连"]
-    include-all: true
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg"
-  - name: "YouTube"
-    type: "select"
-    proxies: ["节点选择", "延迟选优", "故障转移", "全局直连"]
-    include-all: true
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg"
-  - name: "Netflix"
-    type: "select"
-    proxies: ["节点选择", "延迟选优", "故障转移", "全局直连"]
-    include-all: true
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/netflix.svg"
-  - name: "电报消息"
-    type: "select"
-    proxies: ["节点选择", "延迟选优", "故障转移", "全局直连"]
-    include-all: true
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"
-  - name: "ChatGPT"
-    type: "select"
-    include-all: true
-    proxies: ["节点选择", "延迟选优", "故障转移"]
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/chatgpt.svg"
-  - name: "微软服务"
-    type: "select"
-    proxies: ["全局直连", "节点选择", "延迟选优"]
-    include-all: true
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"
-  - name: "苹果服务"
-    type: "select"
-    proxies: ["节点选择", "延迟选优", "故障转移", "全局直连"]
-    include-all: true
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"
+
+  # ⑮ 动画疯
   - name: "动画疯"
     type: "select"
-    proxies: ["节点选择"]
+    proxies:
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
     include-all: true
-    filter: "(?i)台|tw|TW"
+    filter: "(?i)台|tw|TW|🇹🇼"
     interval: 300
     timeout: 3000
     url: "https://www.google.com/generate_204"
@@ -290,60 +389,24 @@ proxy-groups:
     max-failed-times: 3
     hidden: false
     icon: "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/Bahamut.svg"
-  - name: "Spotify"
-    type: "select"
-    proxies: ["节点选择", "延迟选优", "故障转移", "全局直连"]
-    include-all: true
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/spotify.svg"
-  - name: "广告过滤"
-    type: "select"
-    proxies: ["REJECT", "DIRECT"]
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/bug.svg"
-  - name: "全局直连"
-    type: "select"
-    proxies: ["DIRECT", "节点选择", "延迟选优", "故障转移"]
-    include-all: true
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg"
-  - name: "全局拦截"
-    type: "select"
-    proxies: ["REJECT", "DIRECT"]
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"
-  - name: "漏网之鱼"
-    type: "select"
-    proxies: ["节点选择", "延迟选优", "故障转移", "全局直连"]
-    include-all: true
-    interval: 300
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg"
 
+  # ⑯ 哔哩哔哩港澳台
+  - name: "哔哩哔哩港澳台"
+    type: "select"
+    proxies:
+      - "节点选择"
+      - "自动选择"
+      - "故障转移"
+      - "全局直连"
+    include-all: true
+    filter: "(?i)香港|HK|Hong Kong|HKG|🇭🇰|澳门|MO|Macao|🇲🇴|台湾|TW|Taiwan|🇹🇼"
+    interval: 300
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/bilibili.svg"
 
 rules:
   - "DOMAIN-SUFFIX,googleapis.cn,节点选择"
@@ -353,7 +416,7 @@ rules:
   - "DOMAIN,v2rayse.com,节点选择"
   - "RULE-SET,applications,全局直连"
   - "RULE-SET,private,全局直连"
-  - "RULE-SET,reject,广告过滤"
+  - "RULE-SET,reject,REJECT"
   - "RULE-SET,icloud,微软服务"
   - "RULE-SET,apple,苹果服务"
   - "RULE-SET,YouTube,YouTube"
