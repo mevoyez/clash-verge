@@ -165,14 +165,6 @@ proxies:
     skip-cert-verify: false
     udp: true
     sni: "atlus2.jueduibupao.top"
-  - name: "🇨🇦加拿大01|流媒体解锁|AI|移动优化 · NB"
-    type: anytls
-    server: "dafeizhu.xxxyun.top"
-    port: 55011
-    password: "8466ca09-e12f-43cb-89a4-66f4bc514d12"
-    skip-cert-verify: false
-    udp: true
-    sni: "atlca1.jueduibupao.top"
   - name: "🇩🇪德国01|移动优化 · NB"
     type: anytls
     server: "dafeizhu.xxxyun.top"
