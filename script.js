@@ -5,7 +5,11 @@
 //已由 Clash Verge DNS设置负责DNS
 //Script负责规则和代理组
 // =========================
-
+function main(config) {
+  config["external-controller"] = "0.0.0.0:9090";
+  config["secret"] = "nj9tegpx";
+  return config;
+}
 // =========================
 // 规则集通用配置
 // =========================
@@ -555,6 +559,7 @@ function main(config) {
       "icon":
         "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/chatgpt.svg"
     },
+
 
 
     // =========================
