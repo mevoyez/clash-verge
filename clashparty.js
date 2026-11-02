@@ -555,26 +555,34 @@ var AI_AUTO_GROUP = '🤖 AI 全节点自动测速'
 // 不引用地区 Smart 组，也不引用原有 GPT / AI 专用策略组
 var aiAutoExcluded = []
 
-var aiAutoProxies = (config.proxies || [])
-  .filter(function(proxy) {
-    if (!proxy || !proxy.name) return false
+// 从全球节点组获取全部过滤后的真实节点
+var globalProxyGroup = (config['proxy-groups'] || []).find(function(g) {
+  return g && g.name === SMART.GLOBAL
+})
 
-    var name = String(proxy.name).trim()
+var aiAutoExcluded = []
 
-    // 排除独立的 AI / GPT 标识
-    if (/(^|[^A-Z0-9])(AI|GPT)(?=$|[^A-Z0-9])/i.test(name)) {
-      aiAutoExcluded.push(name)
-      return false
-    }
+var aiAutoProxies = (
+  globalProxyGroup && Array.isArray(globalProxyGroup.proxies)
+    ? globalProxyGroup.proxies
+    : []
+).filter(function(name) {
+  if (typeof name !== 'string') return false
 
-    return SckiSubscriptionNodeFilter.isSelectableProxy(proxy)
-  })
-  .map(function(proxy) {
-    return proxy.name
-  })
+  // 排除 AI、GPT、ChatGPT、OpenAI 专用节点
+  var isAI = /OpenAI|ChatGPT|GPT|(^|[^A-Z0-9])AI(?=$|[^A-Z0-9])/i.test(name)
 
-console.log('[AI测速] 保留节点:', aiAutoProxies.length)
-console.log('[AI测速] 排除节点:', aiAutoExcluded)
+  if (isAI) {
+    aiAutoExcluded.push(name)
+    return false
+  }
+
+  return true
+})
+
+console.log('[AI自动测速] 保留节点数量:', aiAutoProxies.length)
+console.log('[AI自动测速] 排除节点数量:', aiAutoExcluded.length)
+console.log('[AI自动测速] 排除节点:', aiAutoExcluded)
 
 var aiAutoGroup = {
   name: AI_AUTO_GROUP,
